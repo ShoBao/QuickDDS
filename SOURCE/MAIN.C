@@ -54,7 +54,7 @@ int main(int argc, char **argv)
 
 			sprintf(OUTFILE, "%s/%u.dds", OUTPATH, ++NFILES);
 
-			IMAGE_DDS IMAGE;
+			IMAGE_DDS IMAGE = {0};
 			int ret = ReadDDSFile(fh, &IMAGE);
 
 			if (0 == ret)
